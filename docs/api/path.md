@@ -60,6 +60,10 @@ var path = new ProgressBar.Path(heartObject.contentDocument.querySelector('#hear
         // Default: 800
         duration: 1200,
 
+        // Delay for animation in milliseconds
+        // Default: 0
+        delay: 100,
+
         // Easing for animation. See #easing section.
         // Default: 'linear'
         easing: 'easeIn',
@@ -108,6 +112,10 @@ path.animate(0.3, {
         // Default: 800
         duration: 1200,
 
+        // Delay for animation in milliseconds
+        // Default: 0
+        delay: 100,
+
         // Easing for animation. See #easing section.
         // Default: 'linear'
         easing: 'easeOut',
@@ -128,6 +136,14 @@ path.animate(0.3, {
     ```
 
 * `cb` Callback function which is called after transition ends.
+
+## .pause()
+
+Suspends animation at its current position.
+
+## .resume()
+
+Resumes animation from a previously paused position.
 
 ## .set(progress)
 
